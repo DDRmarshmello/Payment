@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from 'next/navigation'
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -27,6 +28,8 @@ export default function TablePayroll() {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize] = useState(10); // Número de elementos por página
   const [totalPages, setTotalPages] = useState(0);
+
+  const router = useRouter()
 
   // Función para obtener usuarios
   const fetchData = async () => {
@@ -98,7 +101,7 @@ export default function TablePayroll() {
               return (
                 <TableRow
                   className=""
-                  onClick={() => console.log(emp.empDto.cedula)}
+                  onClick={() => router.push(`/details/${emp.empDto.numEntry}`)}
                 >
                   <TableCell>
                     <div className="font-medium">{emp.empDto.nombre}</div>

@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\",
+  "WorkspaceRootPath": "C:\\Users\\adilone\\source\\Payment\\BACK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\repos\\new folder (2)\\back\\services\\payrollservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:services\\payrollservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\payment\\back\\controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\repos\\new folder (2)\\back\\utils\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:utils\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\payment\\back\\services\\empservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:services\\empservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\repos\\new folder (2)\\back\\controllers\\payrollcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:controllers\\payrollcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\repos\\new folder (2)\\back\\models\\dto\\empdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\payment\\back\\models\\dto\\empdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:models\\dto\\empdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|c:\\users\\adilone\\source\\repos\\new folder (2)\\back\\models\\eming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{668D0234-44A5-4BD0-A892-9ED7AFA73D51}|BACK.csproj|solutionrelative:models\\eming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,66 +42,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PayrollServices.cs",
-              "DocumentMoniker": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Services\\PayrollServices.cs",
-              "RelativeDocumentMoniker": "Services\\PayrollServices.cs",
-              "ToolTip": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Services\\PayrollServices.cs",
-              "RelativeToolTip": "Services\\PayrollServices.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAiwDEAAABYAAAA",
+              "DocumentIndex": 1,
+              "Title": "EmpServices.cs",
+              "DocumentMoniker": "C:\\Users\\adilone\\source\\Payment\\BACK\\Services\\EmpServices.cs",
+              "RelativeDocumentMoniker": "Services\\EmpServices.cs",
+              "ToolTip": "C:\\Users\\adilone\\source\\Payment\\BACK\\Services\\EmpServices.cs",
+              "RelativeToolTip": "Services\\EmpServices.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAIwBgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T16:28:39.461Z",
+              "WhenOpened": "2024-09-24T16:01:41.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Utils\\Repository.cs",
-              "RelativeDocumentMoniker": "Utils\\Repository.cs",
-              "ToolTip": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Utils\\Repository.cs",
-              "RelativeToolTip": "Utils\\Repository.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAWwCMAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "EmpController.cs",
+              "DocumentMoniker": "C:\\Users\\adilone\\source\\Payment\\BACK\\Controllers\\EmpController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpController.cs",
+              "ToolTip": "C:\\Users\\adilone\\source\\Payment\\BACK\\Controllers\\EmpController.cs",
+              "RelativeToolTip": "Controllers\\EmpController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAUwFIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T16:03:09.401Z",
+              "WhenOpened": "2024-09-24T13:47:12.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PayrollController.cs",
-              "DocumentMoniker": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Controllers\\PayrollController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PayrollController.cs",
-              "ToolTip": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Controllers\\PayrollController.cs",
-              "RelativeToolTip": "Controllers\\PayrollController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAMwDIAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T16:21:29.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmIng.cs",
-              "DocumentMoniker": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Models\\EmIng.cs",
-              "RelativeDocumentMoniker": "Models\\EmIng.cs",
-              "ToolTip": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Models\\EmIng.cs",
-              "RelativeToolTip": "Models\\EmIng.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T15:26:56.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "EmpDto.cs",
-              "DocumentMoniker": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Models\\DTO\\EmpDto.cs",
+              "DocumentMoniker": "C:\\Users\\adilone\\source\\Payment\\BACK\\Models\\DTO\\EmpDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\EmpDto.cs",
-              "ToolTip": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\Models\\DTO\\EmpDto.cs",
+              "ToolTip": "C:\\Users\\adilone\\source\\Payment\\BACK\\Models\\DTO\\EmpDto.cs",
               "RelativeToolTip": "Models\\DTO\\EmpDto.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAgwDsAAAAAAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAowGYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T15:26:28.561Z",
+              "WhenOpened": "2024-09-24T13:43:54.232Z",
               "EditorCaption": ""
             }
           ]

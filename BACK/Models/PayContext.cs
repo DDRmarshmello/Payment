@@ -16,6 +16,8 @@ public partial class PayContext : DbContext
     {
     }
 
+    public virtual DbSet<Department> Departments { get; set; }
+
     public virtual DbSet<EmDesc> EmDescs { get; set; }
 
     public virtual DbSet<EmIng> EmIngs { get; set; }
@@ -26,6 +28,8 @@ public partial class PayContext : DbContext
 
     public virtual DbSet<Empleado> Empleados { get; set; }
 
+    public virtual DbSet<Position> Positions { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseMySql("server=localhost;database=Pay;user=root;password=ddr210615", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.38-mysql"), x => x.UseNetTopologySuite());
@@ -35,6 +39,18 @@ public partial class PayContext : DbContext
         modelBuilder
             .UseCollation("utf8mb4_0900_ai_ci")
             .HasCharSet("utf8mb4");
+
+        modelBuilder.Entity<Department>(entity =>
+        {
+            entity.HasKey(e => e.NumEntry).HasName("PRIMARY");
+
+            entity
+                .ToTable("departments")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.NumEntry).HasColumnName("Num_entry");
+            entity.Property(e => e.Description).HasMaxLength(50);
+        });
 
         modelBuilder.Entity<EmDesc>(entity =>
         {
@@ -146,6 +162,10 @@ public partial class PayContext : DbContext
                 .ToTable("empleado")
                 .UseCollation("utf8mb4_unicode_ci");
 
+            entity.HasIndex(e => e.Departament, "FK_Empleado_Department");
+
+            entity.HasIndex(e => e.Cargo, "FK_Empleado_Position");
+
             entity.Property(e => e.NumEntry).HasColumnName("Num_entry");
             entity.Property(e => e.Apellido).HasMaxLength(191);
             entity.Property(e => e.Cargo).HasColumnName("cargo");
@@ -155,6 +175,28 @@ public partial class PayContext : DbContext
                 .HasColumnName("Fecha_Nacimiento");
             entity.Property(e => e.Nombre).HasMaxLength(191);
             entity.Property(e => e.Salary).HasPrecision(10, 2);
+
+            entity.HasOne(d => d.CargoNavigation).WithMany(p => p.Empleados)
+                .HasForeignKey(d => d.Cargo)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Empleado_Position");
+
+            entity.HasOne(d => d.DepartamentNavigation).WithMany(p => p.Empleados)
+                .HasForeignKey(d => d.Departament)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Empleado_Department");
+        });
+
+        modelBuilder.Entity<Position>(entity =>
+        {
+            entity.HasKey(e => e.NumEntry).HasName("PRIMARY");
+
+            entity
+                .ToTable("positions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.NumEntry).HasColumnName("Num_entry");
+            entity.Property(e => e.Description).HasMaxLength(50);
         });
 
         OnModelCreatingPartial(modelBuilder);

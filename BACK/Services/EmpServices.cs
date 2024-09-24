@@ -8,8 +8,8 @@ namespace BACK.Services
 {
     public interface IempServices
     {
-        Task<List<Empleado>> Getempleados(bool include);
-        Task<Empleado> GetempleadoId(int id);
+        Task<List<Empleado>> Getempleados(bool include, int ModeResponse);
+        Task<Empleado> GetempleadoId(int i);
 
     }
     public class EmpServices : IempServices
@@ -20,12 +20,21 @@ namespace BACK.Services
             _repository = bookRepository;
         }
 
-        public async Task<List<Empleado>> Getempleados(bool include = false)
+        public async Task<List<Empleado>> Getempleados(bool include = false, int ModeResponse = 0)
         {
-            if (include)
+            if (include && ModeResponse == 0)
                 return (List<Empleado>)await _repository.GetAllAsync(
+                q => q.Include(e=> e.CargoNavigation),
+                q => q.Include(e=> e.DepartamentNavigation),
                 q => q.Include(e => e.EmDescs).ThenInclude(d => d.EmTypeDescNavigation),
                 q => q.Include(e => e.EmIngs).ThenInclude(d=> d.EmTypeIngNavigation));
+
+            if (ModeResponse == 1 && include)
+            {
+                return (List<Empleado>)await _repository.GetAllAsync(
+                q => q.Include(e => e.CargoNavigation),
+                q => q.Include(e => e.DepartamentNavigation));
+            }
 
             return (List<Empleado>)await _repository.GetAllAsync(
                 q => q.Include(e => e.EmDescs),

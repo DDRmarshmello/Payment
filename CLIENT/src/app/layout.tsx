@@ -4,26 +4,18 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ChevronLeft,
-  ChevronRight,
-  Copy,
-  CreditCard,
-  File,
   Home,
   LineChart,
-  ListFilter,
-  MoreVertical,
   Package,
   Package2,
   PanelLeft,
   Search,
   Settings,
   ShoppingCart,
-  Truck,
   Users2,
+  HandCoins
 } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -34,16 +26,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
@@ -51,23 +34,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-} from "@/components/ui/pagination";
-import { Progress } from "@/components/ui/progress";
-import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
   TooltipContent,
@@ -130,7 +97,7 @@ export default function RootLayout({
                     href="#"
                     className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   >
-                    <ShoppingCart className="h-5 w-5" />
+                    <HandCoins className="h-5 w-5" />
                     <span className="sr-only">Orders</span>
                   </Link>
                 </TooltipTrigger>
@@ -139,26 +106,26 @@ export default function RootLayout({
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="#"
+                    href="/Transactions"
                     className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   >
                     <Package className="h-5 w-5" />
-                    <span className="sr-only">Products</span>
+                    <span className="sr-only">Transactions</span>
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent side="right">Products</TooltipContent>
+                <TooltipContent side="right">Transactions</TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href="#"
+                    href="/employe"
                     className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   >
                     <Users2 className="h-5 w-5" />
-                    <span className="sr-only">Customers</span>
+                    <span className="sr-only">Employes</span>
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent side="right">Customers</TooltipContent>
+                <TooltipContent side="right">Employes</TooltipContent>
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>

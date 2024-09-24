@@ -40,6 +40,7 @@ namespace BACK.Controllers
             return Ok(dt);
         }
 
+
         [Route("AddEmp")]
         [HttpPost]
         public async Task<IActionResult> AddEmp([FromBody] Empleado emp)
@@ -73,6 +74,30 @@ namespace BACK.Controllers
                 return BadRequest();
 
             return Ok(reuslt);
+        }
+
+        [HttpGet]
+        [Route("EmployeeResponse")]
+        public async Task<IActionResult> EmployeeResponse()
+        {
+            var emp = await _empServices.Getempleados(true, 1);
+            var data = new List<EmpDtoResponse>();
+            foreach (var item in emp)
+            {
+                data.Add(new EmpDtoResponse
+                {
+                    Apellido = item.Apellido,
+                    Cargo = item.CargoNavigation.Description,
+                    Cedula = item.Cedula,
+                    Compania = item.Compania,
+                    Departament = item.DepartamentNavigation.Description,
+                    FechaNacimiento = item.FechaNacimiento,
+                    Nombre = item.Nombre,
+                    NumEntry = item.NumEntry,
+                    Salary = item.Salary
+                });
+            }
+            return Ok(data);
         }
     }
 }

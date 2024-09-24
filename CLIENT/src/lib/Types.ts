@@ -12,6 +12,18 @@ export type PayrollResponse = {
   payrollDetails: PayrollDetail[];
 };
 
+export type Employee = {
+  numEntry: number;
+  nombre: string;
+  apellido: string;
+  cedula: string;
+  fechaNacimiento: string; // Formato ISO 8601
+  compania: number;
+  cargo: string;
+  salary: number;
+  departament: string;
+}
+
 export type PayrollDetail = {
   empDto: EmpDto;
   totalAmount: number;

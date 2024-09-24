@@ -7022,11 +7022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\BACK.csproj",
+      "projectUniqueName": "C:\\Users\\adilone\\source\\Payment\\BACK\\BACK.csproj",
       "projectName": "BACK",
-      "projectPath": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\BACK.csproj",
+      "projectPath": "C:\\Users\\adilone\\source\\Payment\\BACK\\BACK.csproj",
       "packagesPath": "C:\\Users\\adilone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adilone\\source\\repos\\New folder (2)\\BACK\\obj\\",
+      "outputPath": "C:\\Users\\adilone\\source\\Payment\\BACK\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

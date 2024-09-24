@@ -21,6 +21,12 @@ public partial class Empleado
 
     public decimal Salary { get; set; }
 
+    public int Departament { get; set; }
+
+    public virtual Position CargoNavigation { get; set; } = null!;
+
+    public virtual Department DepartamentNavigation { get; set; } = null!;
+
     public virtual ICollection<EmDesc> EmDescs { get; set; } = new List<EmDesc>();
 
     public virtual ICollection<EmIng> EmIngs { get; set; } = new List<EmIng>();

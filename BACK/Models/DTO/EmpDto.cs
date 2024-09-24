@@ -88,4 +88,18 @@
         // Aquí añadimos una instancia para el objeto EmTypeDesc que represente la navegación
         public EmTypeDesc? EmTypeDescNavigation { get; set; }
     }
+
+
+    public class EmpDtoResponse
+    {
+        public int NumEntry { get; set; }
+        public string Nombre { get; set; } = null!;
+        public string Apellido { get; set; } = null!;
+        public string Cedula { get; set; } = null!;
+        public DateTime FechaNacimiento { get; set; }
+        public int Compania { get; set; }
+        public string Cargo { get; set; }
+        public decimal Salary { get; set; }
+        public string Departament { get; set; }
+    }
 }
